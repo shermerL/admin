@@ -11,7 +11,7 @@ module.exports={
     { value:'chore',name:'chore:   构建过程或辅助工具的变动' },
     { value:'revert',name: 'revert:    回退' },
     { value:'build',name:'build:   打包' },
-  
+    { value:'improvement',name:'improvement:  改进'}
   ],
   //消息步骤
   messages:{
@@ -22,5 +22,9 @@ module.exports={
      footer:'请输入要关闭的issue(可选)  ',
      confirmCommit:'确认要使用以上信息提交？(y/n)'
 
-  }
+  },
+  //跳过部分内容
+  skipQuestions:['body','footer'],
+  //默认长度
+  subjectLimit:72
 }
