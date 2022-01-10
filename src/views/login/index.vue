@@ -14,10 +14,9 @@
       <!-- password -->
       <el-form-item>
         <span class="svg-container">
-          <span class="svg-container">
-            <svg-icon icon="password" />
-          </span>
+          <svg-icon icon="password" />
         </span>
+
         <el-input placeholder="password" name="password"></el-input>
         <!-- 显示密码 -->
         <span class="show-pwd">
@@ -56,13 +55,14 @@ $cursor: #fff;
   .login-form {
     position: relative;
     width: 520px;
+    max-width: 100%;
     padding: 160px 35px 0;
     margin: 0 auto;
     overflow: hidden;
 
     ::v-deep .el-form-item {
       border: 1px solid rgba(255, 255, 255, 0.1);
-      background-color: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       color: #454545;
     }
@@ -73,14 +73,21 @@ $cursor: #fff;
       width: 85%;
 
       input {
-        height: 47px;
         background: transparent;
-        border: none;
-        border-radius: 0px;
+        border: 0;
+        -webkit-appearance: none;
+        border-radius: 0;
         padding: 12px 5px 12px 15px;
         color: $light_gray;
+        height: 47px;
         caret-color: $cursor;
       }
+    }
+
+    .tips {
+      font-size: 16px;
+      color: #fff;
+      line-height: 24px;
     }
   }
 
@@ -97,7 +104,7 @@ $cursor: #fff;
     .title {
       font-size: 26px;
       color: $light_gray;
-      margin: 0px auto 40px auto;
+      margin: 0 auto 40px auto;
       text-align: center;
       font-weight: bold;
     }
