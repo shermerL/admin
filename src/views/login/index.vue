@@ -7,7 +7,7 @@
       <!-- username -->
       <el-form-item>
         <span class="svg-container">
-          <svg-icon icon="shequ"></svg-icon>
+          <svg-icon icon="user" />
         </span>
         <el-input placeholder="username" name="username" type="text"></el-input>
       </el-form-item>
@@ -15,10 +15,11 @@
       <el-form-item>
         <span class="svg-container">
           <span class="svg-container">
-            <svg-icon icon="mima.svg"></svg-icon>
+            <svg-icon icon="password" />
           </span>
         </span>
         <el-input placeholder="password" name="password"></el-input>
+        <!-- 显示密码 -->
         <span class="show-pwd">
           <span class="svg-container">
             <svg-icon icon="eye"></svg-icon>
